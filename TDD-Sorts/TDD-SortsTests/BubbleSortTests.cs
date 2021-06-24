@@ -34,5 +34,13 @@ namespace TDD_Sorts.Tests
             int[] sortedOutput = { 1, 3, 4, 6, 7, 9, 9 };
             Assert.IsTrue(Enumerable.SequenceEqual(unsortedInput, sortedOutput));
         }
+
+        [Test]
+        public void BubbleSort_WhenArrayEmpty_ReturnsDoingNothing()
+        {
+            int[] emptyArray = { };
+            BubbleSort.Sort(emptyArray);
+            Assert.IsTrue(!emptyArray.Any());
+        }
     }
 }
