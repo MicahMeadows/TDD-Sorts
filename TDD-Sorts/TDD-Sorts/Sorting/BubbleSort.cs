@@ -6,6 +6,9 @@ namespace TDD_Sorts.Sorting
     {
         public static void Sort(int[] input)
         {
+            if (input.Length <= 1)
+                return;
+
             for (int i = 0; i < input.Length; i++)
             {
                 for (int j = 0; j < input.Length - 1; j++)
