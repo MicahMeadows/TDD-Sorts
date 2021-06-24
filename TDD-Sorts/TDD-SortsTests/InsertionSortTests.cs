@@ -10,7 +10,9 @@ namespace TDD_SortsTests
         [Test]
         [TestCase(new int[] { 4, 5, 3, 1, 2 }, new int[] { 1, 2, 3, 4, 5 })]
         [TestCase(new int[] { 2, 7, 8, 6, 5 }, new int[] { 2, 5, 6, 7, 8 })]
-        public void InsertionSort_WhenUnsortedPositiveArray_ReturnsSortedPositiveArray(int[] unsortedInput, int[] sortedOutput)
+        [TestCase(new int[] { -2, -7, -8, -6, -5 }, new int[] { -8, -7, -6, -5, -2 })]
+        [TestCase(new int[] { -4, -5, -3, -1, -2 }, new int[] { -5, -4, -3, -2, -1 })]
+        public void InsertionSort_WhenUnsortedPositiveAndNegativeArray_ReturnsSortedPositiveAndNegativeArray(int[] unsortedInput, int[] sortedOutput)
         {
             // Act
             InsertionSort.Sort(unsortedInput);
@@ -18,5 +20,6 @@ namespace TDD_SortsTests
             // Assert
             Assert.AreEqual(unsortedInput, sortedOutput);
         }
+
     }
 }
