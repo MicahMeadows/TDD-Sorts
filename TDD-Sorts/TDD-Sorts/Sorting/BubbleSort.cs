@@ -34,10 +34,11 @@ namespace TDD_Sorts.Sorting
                     }
                 }
 
-                // if no swaps were made on the first pass the array is already
-                // sorted and we can just return without doing anything
+                // if no swaps were made on the pass the array is sorted
+                // and we can just return without doing anything
                 if (swaps == 0)
                     return;
+                swaps = 0;
             }
         }
     }
