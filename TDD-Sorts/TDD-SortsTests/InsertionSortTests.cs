@@ -21,5 +21,13 @@ namespace TDD_SortsTests
             Assert.AreEqual(unsortedInput, sortedOutput);
         }
 
+        [Test]
+        public void InsertionSort_WhenEmptyArray_VerifyNoIssues()
+        {
+            int[] emptyArray = { };
+            InsertionSort.Sort(emptyArray);
+            Assert.IsFalse(emptyArray.Any());
+        }
+
     }
 }
