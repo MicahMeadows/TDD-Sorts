@@ -42,5 +42,13 @@ namespace TDD_Sorts.Tests
             BubbleSort.Sort(emptyArray);
             Assert.IsTrue(!emptyArray.Any());
         }
+
+        [Test]
+        public void BubbleSort_WhenArraySingleElement_ReturnsDoingNothing([Values(2, 9, 13, 22)] int input)
+        {
+            int[] singleElementArray = { input };
+            BubbleSort.Sort(singleElementArray);
+            Assert.IsTrue(singleElementArray.Length == 1 && singleElementArray[0] == input);
+        }
     }
 }
