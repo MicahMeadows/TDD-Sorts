@@ -10,11 +10,18 @@ namespace TDD_Sorts.Sorting
     {
         public static void Sort(int[] numbers)
         {
-            numbers[0] = 1;
-            numbers[1] = 2;
-            numbers[2] = 3;
-            numbers[3] = 4;
-            numbers[4] = 5;
+            for(int i = 0; i < numbers.Length; i++)
+            {
+                int key = numbers[i];
+
+                int j = i - 1;
+                while(j >= 0 && numbers[j] > key)
+                {
+                    numbers[j + 1] = numbers[j];
+                    j--;
+                }
+                numbers[++j] = key;
+            }
         }
     }
 }

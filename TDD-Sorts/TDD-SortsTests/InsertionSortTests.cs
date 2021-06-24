@@ -16,7 +16,7 @@ namespace TDD_SortsTests
             InsertionSort.Sort(unsortedInput);
 
             // Assert
-            Assert.IsTrue(Enumerable.SequenceEqual(unsortedInput, sortedOutput));
+            Assert.AreEqual(unsortedInput, sortedOutput);
         }
     }
 }
