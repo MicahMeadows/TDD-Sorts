@@ -8,6 +8,7 @@ namespace TDD_SortsTests
     class InsertionSortTests
     {
         [Test]
+        [TestCase(new int[] { 1, 2, 3, 4, 5 }, new int[] { 1, 2, 3, 4, 5 })]
         [TestCase(new int[] { 4, 5, 3, 1, 2 }, new int[] { 1, 2, 3, 4, 5 })]
         [TestCase(new int[] { 2, 7, 8, 6, 5 }, new int[] { 2, 5, 6, 7, 8 })]
         [TestCase(new int[] { -2, -7, -8, -6, -5 }, new int[] { -8, -7, -6, -5, -2 })]
