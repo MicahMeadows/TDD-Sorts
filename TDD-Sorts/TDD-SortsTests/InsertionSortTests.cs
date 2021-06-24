@@ -12,6 +12,8 @@ namespace TDD_SortsTests
         [TestCase(new int[] { 2, 7, 8, 6, 5 }, new int[] { 2, 5, 6, 7, 8 })]
         [TestCase(new int[] { -2, -7, -8, -6, -5 }, new int[] { -8, -7, -6, -5, -2 })]
         [TestCase(new int[] { -4, -5, -3, -1, -2 }, new int[] { -5, -4, -3, -2, -1 })]
+        [TestCase(new int[] { 1 }, new int[] { 1 })]
+        [TestCase(new int[] { 1, 1 }, new int[] { 1, 1 })]
         public void InsertionSort_WhenUnsortedPositiveAndNegativeArray_ReturnsSortedPositiveAndNegativeArray(int[] unsortedInput, int[] sortedOutput)
         {
             // Act
