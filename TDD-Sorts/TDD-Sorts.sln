@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD-Sorts", "TDD-Sorts\TDD-Sorts.csproj", "{747B13AB-FAE1-465D-AB48-9923C58377AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD-SortsTests", "TDD-SortsTests\TDD-SortsTests.csproj", "{D9FEF8E0-CDCD-496E-99DC-FF27D197F661}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD-Sorts.Tests", "TDD-SortsTests\TDD-Sorts.Tests.csproj", "{D9FEF8E0-CDCD-496E-99DC-FF27D197F661}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
