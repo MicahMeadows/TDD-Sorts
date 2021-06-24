@@ -20,10 +20,12 @@ namespace TDD_Sorts.Sorting
             if (input.Length <= 1)
                 return;
 
+            int swaps = 0;
             for (int i = 0; i < input.Length; i++)
             {
                 for (int j = 0; j < input.Length - 1; j++)
                 {
+                    swaps++;
                     if (input[j] > input[j + 1])
                     {
                         int t = input[j];
@@ -31,6 +33,11 @@ namespace TDD_Sorts.Sorting
                         input[j + 1] = t;
                     }
                 }
+
+                // if no swaps were made on the first pass the array is already
+                // sorted and we can just return without doing anything
+                if (swaps == 0)
+                    return;
             }
         }
     }

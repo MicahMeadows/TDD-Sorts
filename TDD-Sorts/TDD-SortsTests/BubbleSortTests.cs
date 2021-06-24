@@ -12,13 +12,13 @@ namespace TDD_Sorts.Tests
         public void BubbleSort_WhenAlreadySortedArray_ReturnsNoErrors()
         {
             // Arrange
-            int[] unsortedInput = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int[] unsortedInput = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
 
             // Act
             BubbleSort.Sort(unsortedInput);
 
             // Assert
-            int[] sortedOutput = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int[] sortedOutput = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
             Assert.IsTrue(Enumerable.SequenceEqual(unsortedInput, sortedOutput));
         }
 
