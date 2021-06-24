@@ -9,6 +9,20 @@ namespace TDD_Sorts.Tests
     class BubbleSortTests
     {
         [Test]
+        public void BubbleSort_WhenAlreadySortedArray_ReturnsNoErrors()
+        {
+            // Arrange
+            int[] unsortedInput = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            // Act
+            BubbleSort.Sort(unsortedInput);
+
+            // Assert
+            int[] sortedOutput = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            Assert.IsTrue(Enumerable.SequenceEqual(unsortedInput, sortedOutput));
+        }
+
+        [Test]
         public void BubbleSort_WhenTwoSevenEightSixFive_ReturnsTwoFiveSixSevenEight()
         {
             // Arrange
@@ -50,5 +64,6 @@ namespace TDD_Sorts.Tests
             BubbleSort.Sort(singleElementArray);
             Assert.IsTrue(singleElementArray.Length == 1 && singleElementArray[0] == input);
         }
+
     }
 }
