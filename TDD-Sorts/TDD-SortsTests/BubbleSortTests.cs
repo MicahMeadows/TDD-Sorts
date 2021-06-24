@@ -65,5 +65,15 @@ namespace TDD_Sorts.Tests
             Assert.IsTrue(singleElementArray.Length == 1 && singleElementArray[0] == input);
         }
 
+        [Test]
+        public void BubbleSort_WhenArrayHasNegatives_ReturnsSortedArray()
+        {
+            int[] unsortedInput = { 2, 9, -12, 0, 17, -4 };
+            BubbleSort.Sort(unsortedInput);
+
+            int[] sortedOutput = { -12, -4, 0, 2, 9, 17 };
+            Assert.IsTrue(Enumerable.SequenceEqual(unsortedInput, sortedOutput));
+        }
+
     }
 }
