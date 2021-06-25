@@ -19,7 +19,7 @@ namespace TDD_Sorts.Tests
 
             // Assert
             int[] sortedOutput = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
-            Assert.IsTrue(Enumerable.SequenceEqual(unsortedInput, sortedOutput));
+            Assert.AreEqual(unsortedInput, sortedOutput);
         }
 
         [Test]
@@ -33,7 +33,7 @@ namespace TDD_Sorts.Tests
 
             // Assert
             int[] sortedOutput = { 2, 5, 6, 7, 8 };
-            Assert.IsTrue(Enumerable.SequenceEqual(unsortedInput, sortedOutput));
+            Assert.AreEqual(unsortedInput, sortedOutput);
         }
         [Test]
         public void BubbleSort_WhenFourNineSevenSixThreeNineOne_ReturnsWhenOneThreeFourSixSevenNineNine()
@@ -46,7 +46,7 @@ namespace TDD_Sorts.Tests
 
             // Assert
             int[] sortedOutput = { 1, 3, 4, 6, 7, 9, 9 };
-            Assert.IsTrue(Enumerable.SequenceEqual(unsortedInput, sortedOutput));
+            Assert.AreEqual(unsortedInput, sortedOutput);
         }
 
         [Test]
@@ -72,7 +72,7 @@ namespace TDD_Sorts.Tests
             BubbleSort.Sort(unsortedInput);
 
             int[] sortedOutput = { -12, -4, 0, 2, 9, 17 };
-            Assert.IsTrue(Enumerable.SequenceEqual(unsortedInput, sortedOutput));
+            Assert.AreEqual(unsortedInput, sortedOutput);
         }
 
     }
