@@ -8,6 +8,13 @@ namespace TDD_Sorts.Utility
 
         internal static string ScrambleArray(int[] numbers, int swaps)
         {
+            if (swaps <= 1)
+                return IntArrayToString(numbers);
+            if (numbers.Length == 0)
+                return "";
+            if (numbers.Length == 1)
+                return numbers[0].ToString();
+
             Random rand = new Random();
             for(int i = 0; i < swaps; i++)
             {

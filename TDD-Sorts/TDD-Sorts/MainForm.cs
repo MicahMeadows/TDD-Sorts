@@ -35,7 +35,8 @@ namespace TDD_Sorts
         private void button_scramble_Click(object sender, EventArgs e)
         {
             int[] convertedArray = SortManager.MakeIntArray(textBox_input.Text);
-            textBox_input.Text = SortManager.ScrambleArray(convertedArray, convertedArray.Length * 4);
+            int swaps = (convertedArray != null ? convertedArray.Length * 4 : 0);
+            textBox_input.Text = SortManager.ScrambleArray(convertedArray, swaps);
         }
     }
 }
