@@ -6,7 +6,22 @@ namespace TDD_Sorts.Utility
     public class SortManager
     {
         
-        public 
+        public static string GenerateRandomString(int length, int max)
+        {
+            if (length < 1)
+                return "";
+
+            string output = "";
+            Random rand = new Random();
+
+            for(int i = 0; i < length; i++)
+            {
+                output += rand.Next(0, max);
+                output += ", ";
+            }
+            return output.Substring(0, output.Length - 2);
+        }
+
         public static string IntArrayToString(int[] inputArray)
         {
             if (inputArray == null)
