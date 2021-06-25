@@ -1,6 +1,5 @@
 ﻿using NUnit.Framework;
-
-using TDD_Sorts;
+using TDD_Sorts.Utility;
 
 namespace TDD_SortsTests
 {

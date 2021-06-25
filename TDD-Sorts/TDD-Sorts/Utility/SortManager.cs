@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Linq;
 
-namespace TDD_Sorts
+namespace TDD_Sorts.Utility
 {
     public class SortManager
     {
+        
+
         public static string IntArrayToString(int[] inputArray)
         {
+            if (inputArray == null)
+                return null;
             if (inputArray.Length == 0)
-                return "";
+                return null;
             
             string output = "";
             for(int i = 0; i < inputArray.Length; i++)
