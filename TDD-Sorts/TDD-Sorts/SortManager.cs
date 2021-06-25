@@ -1,9 +1,23 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 
 namespace TDD_Sorts
 {
     public class SortManager
     {
+        public static string IntArrayToString(int[] inputArray)
+        {
+            if (inputArray.Length == 0)
+                return "";
+            
+            string output = "";
+            for(int i = 0; i < inputArray.Length; i++)
+            {
+                output += inputArray[i] + ", ";
+            }
+            return output.Substring(0, output.Length - 2);
+        }
+
         public static int[] MakeIntArray(string inputString)
         {
             if (string.IsNullOrEmpty(inputString))
