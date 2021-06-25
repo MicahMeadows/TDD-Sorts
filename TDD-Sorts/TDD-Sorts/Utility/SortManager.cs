@@ -6,7 +6,7 @@ namespace TDD_Sorts.Utility
     public class SortManager
     {
         
-
+        public 
         public static string IntArrayToString(int[] inputArray)
         {
             if (inputArray == null)
