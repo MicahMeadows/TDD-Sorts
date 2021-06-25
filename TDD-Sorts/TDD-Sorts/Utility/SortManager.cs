@@ -5,7 +5,23 @@ namespace TDD_Sorts.Utility
 {
     public class SortManager
     {
-        
+
+        internal static string ScrambleArray(int[] numbers, int swaps)
+        {
+            Random rand = new Random();
+            for(int i = 0; i < swaps; i++)
+            {
+                int r1 = rand.Next(0, numbers.Length);
+                int r2 = rand.Next(0, numbers.Length);
+
+                int t = numbers[r1];
+                numbers[r1] = numbers[r2];
+                numbers[r2] = t;
+            }
+
+            return IntArrayToString(numbers);
+        }
+
         public static string GenerateRandomArray(int length, int max)
         {
             if (length < 1)
@@ -36,6 +52,8 @@ namespace TDD_Sorts.Utility
             }
             return output.Substring(0, output.Length - 2);
         }
+
+        
 
         public static int[] MakeIntArray(string inputString)
         {
