@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace TDD_Sorts
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        int[] numbers = null;
+
+        public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void button_scramble_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
