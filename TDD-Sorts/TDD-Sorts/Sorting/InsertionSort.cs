@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-// Insertion Sort is a very simple sorting algorithm
+﻿// Insertion Sort is a very simple sorting algorithm
 // that works similarly to sorting a deck of cards
 // in your hands where you index through an array
 // and put each element in its right spot before
