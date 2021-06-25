@@ -125,6 +125,7 @@ namespace TDD_Sorts
             this.button_scramble.TabIndex = 22;
             this.button_scramble.Text = "Scramble";
             this.button_scramble.UseVisualStyleBackColor = true;
+            this.button_scramble.Click += new System.EventHandler(this.button_scramble_Click);
             // 
             // button_sort
             // 

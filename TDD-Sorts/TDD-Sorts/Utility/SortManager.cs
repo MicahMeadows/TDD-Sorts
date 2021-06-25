@@ -6,7 +6,7 @@ namespace TDD_Sorts.Utility
     public class SortManager
     {
         
-        public static string GenerateRandomString(int length, int max)
+        public static string GenerateRandomArray(int length, int max)
         {
             if (length < 1)
                 return "";
