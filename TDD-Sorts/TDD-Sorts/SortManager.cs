@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace TDD_Sorts.Parsing
+namespace TDD_Sorts
 {
     public class SortManager
     {
@@ -30,5 +30,7 @@ namespace TDD_Sorts.Parsing
 
             return outputArray;
         }
+
+        
     }
 }

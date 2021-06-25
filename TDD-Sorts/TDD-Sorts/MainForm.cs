@@ -23,5 +23,15 @@ namespace TDD_Sorts
         {
 
         }
+
+        private void button_generate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_sort_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

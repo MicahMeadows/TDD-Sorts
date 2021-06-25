@@ -115,6 +115,7 @@ namespace TDD_Sorts
             this.button_generate.TabIndex = 23;
             this.button_generate.Text = "Generate";
             this.button_generate.UseVisualStyleBackColor = true;
+            this.button_generate.Click += new System.EventHandler(this.button_generate_Click);
             // 
             // button_scramble
             // 
@@ -133,6 +134,7 @@ namespace TDD_Sorts
             this.button_sort.TabIndex = 21;
             this.button_sort.Text = "Sort";
             this.button_sort.UseVisualStyleBackColor = true;
+            this.button_sort.Click += new System.EventHandler(this.button_sort_Click);
             // 
             // textBox_input
             // 

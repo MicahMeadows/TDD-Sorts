@@ -1,11 +1,11 @@
 ﻿using NUnit.Framework;
 
-using TDD_Sorts.Parsing;
+using TDD_Sorts;
 
 namespace TDD_SortsTests
 {
     [TestFixture]
-    public class MakeIntArray
+    public class MakeIntArrayTests
     {
         [Test]
         [TestCase("1, 2, 3, 4, 5", new int[] { 1, 2, 3, 4, 5 })]
