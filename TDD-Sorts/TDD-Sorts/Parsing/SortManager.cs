@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 
 namespace TDD_Sorts.Parsing
 {
@@ -10,15 +6,24 @@ namespace TDD_Sorts.Parsing
     {
         public static int[] MakeIntArray(string inputString)
         {
-            // "1, 2, 3, 4, 5" -> "1,2,3,4,5" -> {"1","2","3","4","5"}
+            if (string.IsNullOrEmpty(inputString))
+                return null;
+
             // remove whitespace
             inputString = inputString.Replace(" ", string.Empty);
 
+            if (string.IsNullOrEmpty(inputString))
+                return null;
+
             // split string
             string[] splitString = inputString.Split(',');
+            int splitStringLength = splitString.Length;
 
-            int[] outputArray = new int[splitString.Length];
-            for(int i = 0; i < splitString.Length; i++)
+            if (string.IsNullOrEmpty(splitString[splitString.Length - 1]))
+                splitStringLength--;
+
+            int[] outputArray = new int[splitStringLength];
+            for(int i = 0; i < splitStringLength; i++)
             {
                 outputArray[i] = int.Parse(splitString[i]);
             }
