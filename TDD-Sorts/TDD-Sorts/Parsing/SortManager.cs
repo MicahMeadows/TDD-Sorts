@@ -13,7 +13,7 @@ namespace TDD_Sorts.Parsing
             // "1, 2, 3, 4, 5" -> "1,2,3,4,5" -> {"1","2","3","4","5"}
             // remove whitespace
             inputString = inputString.Replace(" ", string.Empty);
-            
+
             // split string
             string[] splitString = inputString.Split(',');
 
